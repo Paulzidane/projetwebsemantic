@@ -1,0 +1,65 @@
+.sparql-query-container {
+    font-family: Arial, sans-serif;
+    border: 1px solid #264bf0;
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Ajouter une règle pour le textarea */
+#sparqlQuery {
+    width: 100%;/* Utiliser une largeur de 100% pour remplir l'espace disponible */
+    height: 200px; /* Ajuster la hauteur selon vos besoins */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .querycomponent{
+    display: flex;
+    justify-content: space-between; /* Pour aligner les éléments et les espacer */
+    
+  }
+
+/* Style pour le deuxième élément */
+.querycomponent > :nth-child(2) {
+    margin-left: auto; /* Pour pousser le deuxième élément vers la droite */
+  }
+  
+  button {
+    width: 33%; /* Utiliser 33% pour occuper un tiers de la largeur */
+    padding: 10px 20px;
+   
+   
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Centrer l'icône horizontalement */
+    align-items: center; /* Centrer l'icône verticalement */
+  }
+  
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  .button{
+    width: 30%;
+   
+  }
+  .queryspace{
+    width: 65%;
+    
+  padding: 5%;
+    textarea{
+        width: 100%;
+       
+    }
+  }
+  
+  .query-results {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  

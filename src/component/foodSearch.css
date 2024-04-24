@@ -1,0 +1,24 @@
+.food-search-container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    width: 51%;
+    padding: 10px;
+  }
+  
+  .food-search-container input {
+    flex: 1; /* La barre de recherche prendra tout l'espace disponible */
+    margin-right: 10px; /* Ajouter un espacement entre les éléments */
+    width: 150px; /* Définir une largeur spécifique pour la barre de recherche */
+    padding-right: 30px; /* Laisser de l'espace à droite pour l'icône */
+  }
+  
+  
+  .food-search-container button {
+    position: absolute;
+    right: 15%; /* Ajuster la position du bouton à droite */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
