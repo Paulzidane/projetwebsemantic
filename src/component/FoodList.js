@@ -41,17 +41,21 @@ const FoodList = () => {
 
 
   return (
+    <div>
+      <h2>Liste des nourritures Zambiennes</h2>
+    
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      <h2>Liste des nourritures</h2>
+      
       {foods.map((food, index) => (
-        <div key={index} style={{ width: '300px', margin: '10px', textAlign: 'center' }}>
-          <div style={{ width: '150px', height: '150px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto' }}>
-            <img src={food.image.value + "?raw=true"} alt={food.nom.value} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <h3>{food.nom.value}</h3>
-          <p>{food.description.value}</p>
+      <div key={index} style={{ width: '300px', margin: '10px', textAlign: 'center', backgroundColor: 'rgb(173, 216, 230)', paddingTop: '20px' }}>
+        <div style={{ width: '150px', height: '150px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto' }}>
+          <img src={food.image.value + "?raw=true"} alt={food.nom.value} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
+        <h3>{food.nom.value}</h3>
+        <p>{food.description.value}</p>
+      </div>
       ))}
+    </div>
     </div>
   );
 };
