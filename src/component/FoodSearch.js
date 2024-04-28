@@ -48,6 +48,7 @@ const FoodSearch = () => {
 
   return (
     <div className="food-search-container">
+      <h1 style={{ color:'blue'}}> nourriture correspondant</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap' }} className="search-results">
         {searchResults.map((result, index) => (
           <div key={index} style={{ width: '300px', margin: '10px', textAlign: 'center', backgroundColor: 'rgb(173, 216, 230)', paddingTop: '20px' }} className="food-result">
