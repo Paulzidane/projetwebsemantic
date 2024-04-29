@@ -1,0 +1,1269 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#"
+     xml:base="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foodData="http://www.semanticweb.org/dekelshoot/ontologies/2024/3/foodData#"
+     xmlns:fooddata="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#hasFoodComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#hasFoodComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#hasFoodIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#hasFoodIngredient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#isFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#isFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#image -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#image">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Place"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Acides_gras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Acides_gras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Acides gras</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Bœuf_aux_pommes_de_terre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Bœuf_aux_pommes_de_terre">
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Cumin"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Eau"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Huile"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Pommes_de_terre"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Poulet"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#ail"/>
+        <description>1/2 cube de poulet (Protéines,Vitamines B12, Minéraux
+1 tasse d&apos;eau (Hydratation)
+1 c à c de cumin (Minéraux,Propriétés)
+1 c à c d&apos;ail hachés  ( Vitamine B6, Fibres, Glucides)
+1/2 oignon, haché ( Vitamine C,  minéraux, Fibres, Glucides)
+3 c à s d&apos;huile d&apos;olive (Vitamine E, Graisses)
+3 pommes de terre (Glucides, Fibres, Vitamine C , Mineraux)
+1/2 oignon, haché</description>
+        <image>../../assets/Bœuf_aux_pommes_de_terre.png</image>
+        <name>Bœuf aux pommes de terre</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Cannelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Cannelle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <name>Cannelle</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Croquettes_de_boeuf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Croquettes_de_boeuf">
+        <description>1- 200 g de mie de pain céto
+      2- 120 g d&apos;eau
+      3- 680 g de bœuf haché
+      4- 2 oignons
+      5- 2 gousses d&apos;ail
+      6- 20 g de persil haché
+      7- 1 Œuf
+      8- 1 cuillère à café rase de poivre noir
+      9- 1 cuillère à café de cumin moulu
+      10- 1/2 cuillère à café de paprika
+      11- Sel au goût
+      12- 45 g d&apos;huile de coco</description>
+        <image>./../assets/Croquettes-de-viande-de-Somalie-0012.jpg</image>
+        <name>Croquettes de boeuf</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Cumin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Cumin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <name>Cumin</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Curcuma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Curcuma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC"/>
+        <name>Curcuma</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Eau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Eau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Eau</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Fenugrec -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Fenugrec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <name>Fenugrec</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Fibres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Fibres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Fibres</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Féculent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Féculent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Féculent"/>
+        <name>Fibres</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Glucides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Glucides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Glucides</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Huile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Huile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Acides_gras"/>
+        <name>Huile</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Lahooh_aux_lentilles_et_aux_épinards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Lahooh_aux_lentilles_et_aux_épinards">
+        <description>1- 195 g de farine T 65
+      2- 65 g de farine de maïs
+      3- 1 oeuf
+      4- 50 cl de lait entier
+      5- une pincée de sel
+      6- 1 cc de bicarbonate de soude
+      7- 200 g de lentilles
+      8- 2 oignons
+      9- 1 grosse tomate
+      10- 500 g d&apos; épinards</description>
+        <image>../../assets/Somalie-Martine.jpg</image>
+        <name>Lahooh aux lentilles et aux épinards</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Lipides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Lipides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Lipides</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Minéraux</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_030a7b73_238c_4e21_ae7c_1efb88e78808 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_030a7b73_238c_4e21_ae7c_1efb88e78808">
+        <description>Le plat zambien appelé &quot;ndolais&quot; est un plat traditionnel à base de poisson. Il est généralement préparé en faisant cuire du poisson avec des légumes et des épices dans une sauce savoureuse. Le ndolais est souvent accompagné de manioc, un tubercule féculent largement consommé en Afrique. Le manioc peut être préparé de différentes manières, y compris bouilli, frit ou transformé en farine pour faire du &quot;nshima&quot;, une sorte de bouillie épaisse qui est un aliment de base en Zambie et dans d&apos;autres pays d&apos;Afrique. L&apos;association du ndolais avec du manioc offre une combinaison délicieuse de saveurs et de textures dans la cuisine zambienne.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/ndolai-accompagne-de-manioc.jpeg</image>
+        <name>Ndolais_accompagné_de_manioc</name>
+        <rdfs:label xml:lang="fr">Ndolais_accompagné_de_manioc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_08478628_9d86_48cb_9220_4976edd20bb0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_08478628_9d86_48cb_9220_4976edd20bb0">
+        <description>Protéines : Environ 20 à 25 grammes
+Lipides : Environ 5 à 10 grammes (selon la coupe et la teneur en matières grasses)
+Calories : Environ 150 à 250 calories (selon la coupe et la teneur en matières grasses)
+Fer : Environ 2 à 3 milligrammes
+Zinc : Environ 4 à 5 milligrammes
+Vitamines B : Bonne source de vitamines B12 et de niacine</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/pumkh.jpeg</image>
+        <name>Pumkh</name>
+        <rdfs:label xml:lang="fr">Pumkh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_08b09f8c_48ab_49af_8974_22c20fe8b502 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_08b09f8c_48ab_49af_8974_22c20fe8b502">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Voici les ingrédients de sa recette :
+2 grosses tomates ou 4 normales
+1/2 oignon rouge coupé en dés
+1 gousse d&apos;ail finement émincée
+1 c.à c de paprika fumé
+1 c. à c de cumin en poudre
+1 c. à s de farine
+piment
+1/4 de poivron rouge coupé en dès (facultatif)
+1 c à s d&apos;huile
+10 cl d&apos;eau
+sel, poivre</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Sauce-tomate-zambienne.jpg</image>
+        <name>Sauce_tomate_zambienne</name>
+        <rdfs:label xml:lang="fr">Sauce_tomate_zambienne</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_0971eee7_3d86_4caf_9cf0_9aac899fb80c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_0971eee7_3d86_4caf_9cf0_9aac899fb80c">
+        <description>La Nshima au poulet est un plat traditionnel zambien qui consiste en une bouillie épaisse de farine de maïs (Nshima) servie avec du poulet préparé de différentes manières. La Nshima est préparée en faisant bouillir de la farine de maïs avec de l&apos;eau jusqu&apos;à ce qu&apos;elle atteigne une consistance dense et épaisse. Le poulet peut être préparé en sauce, grillé, rôti ou cuit de toute autre manière selon les préférences régionales et individuelles.
+
+Ce plat est apprécié pour sa valeur nutritionnelle, sa capacité à fournir une sensation de satiété et sa place centrale dans la cuisine traditionnelle zambienne. La combinaison de la Nshima et du poulet crée un repas équilibré et nourrissant, souvent apprécié en famille ou lors d&apos;occasions spéciales.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nshima-au-poulet.jpeg</image>
+        <name>Nshima_au_poulet</name>
+        <rdfs:label xml:lang="fr">Nshima_au_poulet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_0e816301_e203_42f4_8b5a_332a6ccc1654 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_0e816301_e203_42f4_8b5a_332a6ccc1654">
+        <description>La Nsima, étant principalement composée de farine de maïs et d&apos;eau, est une source importante de glucides complexes. En raison de sa nature, elle est riche en énergie et constitue un aliment de base pour de nombreuses personnes en Afrique australe. Cependant, la Nsima en elle-même ne contient pas une grande variété d&apos;éléments nutritifs.
+
+Pour un repas équilibré, la Nsima est généralement consommée avec des plats d&apos;accompagnement tels que des légumes, des légumineuses, des viandes ou des sauces, qui fournissent une gamme plus variée de nutriments tels que des protéines, des vitamines, des minéraux et des fibres.
+
+Il est important de noter que la valeur nutritionnelle de la Nsima dépendra en grande partie des plats qui l&apos;accompagnent et des autres aliments consommés dans le cadre d&apos;un repas complet.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nsima.jpeg</image>
+        <name>Nsima</name>
+        <rdfs:label xml:lang="fr">Nsima</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_145842a6_42bf_459d_970b_4c712ba35074 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_145842a6_42bf_459d_970b_4c712ba35074">
+        <rdfs:label xml:lang="fr">Cassava_leave_punded_soda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_16b387dd_e11d_4789_a572_028b7d2350bd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_16b387dd_e11d_4789_a572_028b7d2350bd">
+        <description>Le &quot;chikanda&quot;, également connu sous le nom de &quot;African polony&quot; ou &quot;African sausage&quot;, est un plat traditionnel zambien et malawite. Il est préparé à partir de racines de plantes sauvages, en particulier les racines de la plante Orchidaceae. Les racines sont séchées, puis moulues en une pâte fine. Cette pâte est mélangée avec des arachides grillées, de l&apos;huile, des oignons, du sel et parfois du piment pour former une sorte de pâte épaisse. Cette pâte est ensuite cuite à la vapeur pour créer un plat dense et savoureux.
+
+Le chikanda est apprécié pour sa texture unique et son goût distinctif. Il est souvent consommé en tant que plat d&apos;accompagnement ou en-cas dans de nombreuses régions d&apos;Afrique australe.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Chikanda.jpeg</image>
+        <name>Chikanda</name>
+        <rdfs:label xml:lang="fr">Chikanda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_1fd757b1_c794_47d6_8e2a_5e10594b43f4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_1fd757b1_c794_47d6_8e2a_5e10594b43f4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/zambianfoo-nshime.jpeg</image>
+        <name>legume, vitumbala et haricot accompagnées du nshima</name>
+        <name>zambianfood-nshime</name>
+        <rdfs:label xml:lang="fr">Zambianfood-nshime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_28f9eee9_cb77_447c_97d4_ee3ae1f75ca8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_28f9eee9_cb77_447c_97d4_ee3ae1f75ca8">
+        <description>&quot;kandolo&quot; fait référence à un type particulier de patate douce en Zambie</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Kandolo.jpeg</image>
+        <name>Kandolo</name>
+        <rdfs:label xml:lang="fr">Kandolo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_2a74fed1_8a0a_4b5e_9061_41f89c7aae88 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_2a74fed1_8a0a_4b5e_9061_41f89c7aae88">
+        <description>L&apos;impwa, également connue sous le nom d&apos;aubergine africaine ou d&apos;aubergine à œufs, est un légume populaire en Afrique australe, en particulier en Zambie. Il s&apos;agit d&apos;un type d&apos;aubergine qui est plus petit et plus rond que les variétés d&apos;aubergines européennes. L&apos;impwa a une peau violette et blanche et une chair ferme.
+
+En Zambie, l&apos;impwa est souvent utilisée dans la cuisine locale pour préparer une variété de plats. Elle peut être cuite, frite, ou ajoutée à des ragoûts et des sauces. L&apos;impwa est appréciée pour sa texture ferme et sa capacité à absorber les saveurs des autres ingrédients avec lesquels elle est cuisinée.
+
+Les plats à base d&apos;impwa sont souvent appréciés pour leur goût délicat et leur polyvalence en cuisine.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Impwa.jpeg</image>
+        <name>Impwa</name>
+        <rdfs:label xml:lang="fr">Impwa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_2b08b28a_eee4_43b5_8a70_f78f215b15a4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_2b08b28a_eee4_43b5_8a70_f78f215b15a4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Ifisashi est un plat traditionnel zambien composé de feuilles de citrouille ou d&apos;autres légumes verts, cuits avec de la pâte d&apos;arachide et des épices pour créer une sauce riche et savoureuse. Les feuilles sont généralement bouillies jusqu&apos;à ce qu&apos;elles soient tendres, puis mélangées avec la sauce à base de pâte d&apos;arachide, d&apos;oignons, de tomates et d&apos;autres assaisonnements.
+
+D&apos;autre part, le nshima est un aliment de base en Zambie, qui est une sorte de bouillie épaisse à base de farine de maïs. Il est préparé en faisant bouillir de la farine de maïs dans de l&apos;eau jusqu&apos;à ce qu&apos;elle épaississe pour former une texture semblable à de la purée. Le nshima est souvent consommé avec les mains et utilisé pour attraper les sauces et les accompagnements, comme le ifisashi.
+
+Ensemble, le ifisashi et le nshima forment un repas traditionnel zambien équilibré, offrant une combinaison de saveurs et de textures appréciées dans la cuisine zambienne.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Ifisashi%20%26%20Nshima.jpeg</image>
+        <name>Ifisashi_et_nshima</name>
+        <rdfs:label xml:lang="fr">Ifisashi_et_Nshima</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_2b7c5f50_f306_45ca_b72b_fe1cc08896f7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_2b7c5f50_f306_45ca_b72b_fe1cc08896f7">
+        <description>La Nsima, étant principalement composée de farine de maïs et d&apos;eau, est une source importante de glucides complexes. En raison de sa nature, elle est riche en énergie et constitue un aliment de base pour de nombreuses personnes en Afrique australe. Cependant, la Nsima en elle-même ne contient pas une grande variété d&apos;éléments nutritifs.
+
+Pour un repas équilibré, la Nsima est généralement consommée avec des plats d&apos;accompagnement tels que des légumes, des légumineuses, des viandes ou des sauces, qui fournissent une gamme plus variée de nutriments tels que des protéines, des vitamines, des minéraux et des fibres.
+
+Il est important de noter que la valeur nutritionnelle de la Nsima dépendra en grande partie des plats qui l&apos;accompagnent et des autres aliments consommés dans le cadre d&apos;un repas complet.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nsima-couscous.jpeg</image>
+        <name>Nsima_couscous</name>
+        <rdfs:label xml:lang="fr">Nsima-couscous</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_34381536_d80b_4131_88d1_5b0c67047698 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_34381536_d80b_4131_88d1_5b0c67047698">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Le plat zambien &quot;poulet aux graines de courge accompagné de plantain mûr&quot; est une délicieuse combinaison de saveurs et de textures. Le poulet est souvent préparé avec des épices et des graines de courge pour lui donner une saveur riche et une texture croquante. Le plantain mûr est généralement frit ou cuit à la vapeur jusqu&apos;à ce qu&apos;il soit tendre et sucré.
+
+Le poulet est une excellente source de protéines, tandis que les graines de courge ajoutent des acides gras sains, des protéines et des fibres. Le plantain mûr offre une source de glucides naturels, de fibres et de certaines vitamines et minéraux.
+
+Cette combinaison crée un repas équilibré et savoureux, offrant une variété d&apos;éléments nutritifs tout en étant délicieuse et satisfaisante.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/poulet-au-graine-de-courge-avec-plantin.jpeg</image>
+        <name>poulet_au_graine_de_courge</name>
+        <rdfs:label xml:lang="fr">poulet_au_graine_de_courge_avec_plantin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_3d236cc9_10e0_4814_9a5a_cf088a378121 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_3d236cc9_10e0_4814_9a5a_cf088a378121">
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Protides"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Protéines"/>
+        <description>Protéines : Environ 6 à 7 grammes
+Matières grasses : Environ 5 grammes
+Calories : Environ 70 à 80 calories
+Vitamines : Les œufs sont une bonne source de vitamines B12, D et riboflavine, ainsi que de certains autres nutriments.
+Minéraux : Ils contiennent du fer, du zinc et du phosphore, entre autres.
+Composition nutritionnelle des légumes (pour une portion de légumes variés) :
+
+Fibres : Les légumes peuvent être une bonne source de fibres, en fonction du type de légume consommé.
+Vitamines : Les légumes fournissent une variété de vitamines, telles que la vitamine A, la vitamine C, la vitamine K, etc.
+Minéraux : Certains légumes sont riches en minéraux tels que le potassium, le calcium, le magnésium, etc.
+Antioxydants : Les légumes sont également une source d&apos;antioxydants bénéfiques pour la santé.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/NShime-oeuf.jpeg</image>
+        <name>Nshime_oeuf</name>
+        <rdfs:label xml:lang="fr">Nshime_oeuf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_3f0d2ba3_2017_4cb6_9580_5ee4e5a6f7bd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_3f0d2ba3_2017_4cb6_9580_5ee4e5a6f7bd">
+        <description>Le vitumbuwa est un beignet traditionnel zambienne. Il est préparé en mélangeant de la farine de blé, de la levure, du sucre, du lait de coco et parfois de la noix de coco râpée pour former une pâte. Cette pâte est ensuite frite jusqu&apos;à ce qu&apos;elle soit dorée et croustillante.
+
+La composition typique du vitumbuwa comprend donc de la farine de blé, de la levure, du sucre, du lait de coco et éventuellement de la noix de coco râpée. Une fois frit, il est souvent servi comme une délicieuse collation sucrée dans de nombreuses régions de zambienne.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Chibwabwa-et-vitumbuwa.jpeg</image>
+        <name>Chibwabwa_et_vitumbuwa</name>
+        <rdfs:label xml:lang="fr">Chibwabwa _au_vitumbuwa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_45433a28_8559_406d_ae26_b8ba482a5325 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_45433a28_8559_406d_ae26_b8ba482a5325">
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nshima%20-%20Polenta-%C3%A0-la-farine-de-ma%C3%AFs.jpg</image>
+        <name>150 g de semoule de maïs
+de l&apos; eau
+5 tomates variétés anciennes
+sel et poivre
+2 cs d&apos; huile
+2 cs de vinaigre</name>
+        <name>Nshima_polenta</name>
+        <rdfs:label xml:lang="fr">Nshima_Polenta_à_la_farine_de_maïs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_46815d08_7fa6_42f0_8399_6c3f7790559b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_46815d08_7fa6_42f0_8399_6c3f7790559b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Piment"/>
+        <description>variante épicée du plat zambien &quot;vinkubala&quot;, qui est à l&apos;origine à base de chenilles de mopane frites. L&apos;ajout de piment ou d&apos;épices épicées pourrait apporter une saveur piquante et relevée aux chenilles de mopane, offrant ainsi une variante épicée de ce plat traditionnel zambien. L&apos;ajout de piment peut ajouter de la profondeur et de la complexité à la saveur, tout en relevant l&apos;expérience gustative.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/vonkubala-piment%C3%A9.jpeg</image>
+        <name>Vonkubala_pimenté</name>
+        <rdfs:label xml:lang="fr">Vonkubala-pimenté</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_487ff0c0_bee4_4be0_a69f_9659bd453620 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_487ff0c0_bee4_4be0_a69f_9659bd453620">
+        <description>Le plat zambien appelé &quot;luwondo&quot; est un plat traditionnel à base de poisson. Il est préparé en faisant cuire du poisson avec des légumes et des épices dans une sauce savoureuse. Les ingrédients spécifiques et la méthode de préparation peuvent varier d&apos;une région à l&apos;autre en Zambie, mais le plat est généralement apprécié pour sa saveur délicieuse et son caractère traditionnel.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/luwonbo.jpeg</image>
+        <name>Luwondo</name>
+        <rdfs:label xml:lang="fr">Luwonbo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_4bb6e772_163f_4833_a701_b9f5c7bbb375 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_4bb6e772_163f_4833_a701_b9f5c7bbb375">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Voici les ingrédients de sa recette :
+2 tasses d’eau (j’ai ajouté un bouillon cube de légumes)
+1 tasse de cacahuètes grillées hachées (ou pas)
++ 5-6 cacahuètes pour la décoration
+1 oignon émincé
+2 grosses tomates coupées en dés
+2 bouquets d’épinards (ou un chou vert) lavés et hachés
+Sel et poivre</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Rago%C3%BBt-de-cacahu%C3%A8tes-et-polenta.jpg</image>
+        <name>Ragout_de_cacahuetes</name>
+        <rdfs:label xml:lang="fr">Ragoût_de_cacahuètes_et_polenta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_4cf7e0e8_2a56_43be_ab7a_614476d727f5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_4cf7e0e8_2a56_43be_ab7a_614476d727f5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <rdfs:label xml:lang="fr">Viane_zambie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_50ce3192_7474_4216_8fd0_ea3a8d6bfd0d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_50ce3192_7474_4216_8fd0_ea3a8d6bfd0d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Le plat zambien &quot;ambo&quot; est un plat traditionnel composé d&apos;igname, de chenilles et d&apos;huile rouge. L&apos;igname est un tubercule féculent largement consommé en Afrique, offrant une texture ferme et une saveur légèrement sucrée. Les chenilles, une source de protéines importante dans de nombreuses régions d&apos;Afrique, sont souvent préparées en sauce avec des épices pour ajouter de la saveur au plat. L&apos;huile rouge est également utilisée pour sa saveur distinctive et pour lier les ingrédients ensemble. Ce plat offre une combinaison de goûts et de textures qui est appréciée dans la cuisine zambienne.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/ambo.jpeg</image>
+        <name>Ambo</name>
+        <rdfs:label xml:lang="fr">Ambo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_5618bf85_af93_4ef4_8615_0c6b0daa56c6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_5618bf85_af93_4ef4_8615_0c6b0daa56c6">
+        <description>Il s&apos;agit d&apos;un pain rond évidé, rempli de curry épicé à base de viande, de poulet ou de légumes. Ce plat est souvent mangé avec les mains et est apprécié pour son goût délicieux et épicé. Le Bunnychow est un aliment emblématique de la cuisine zambienne et est souvent considéré comme un plat réconfortant et savoureux.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Bunnychow.jpeg</image>
+        <name>bunnyChow</name>
+        <rdfs:label xml:lang="fr">Bunnychow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_5714a625_b26b_48d7_a0e7_d74e2e9edc98 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_5714a625_b26b_48d7_a0e7_d74e2e9edc98">
+        <description>Les patates bouillies sont des pommes de terre cuites dans de l&apos;eau jusqu&apos;à ce qu&apos;elles soient tendres. Elles sont souvent consommées comme accompagnement dans de nombreux plats à travers le monde.
+
+L&apos;avocat, quant à lui, est un fruit riche en matières grasses saines et en nutriments. Il est souvent consommé cru, coupé en tranches ou écrasé pour faire du guacamole.
+
+L&apos;association de patates bouillies avec de l&apos;avocat crée un plat simple mais délicieux. Les patates bouillies peuvent fournir une base rassasiante, tandis que l&apos;avocat apporte une texture crémeuse et une saveur riche. C&apos;est un plat sain et équilibré, offrant des glucides, des graisses saines et des nutriments essentiels.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/kandolo-avec-avocat.jpeg</image>
+        <name>kandolo_avec_avocat</name>
+        <rdfs:label xml:lang="fr">Kandolo_avec_avocat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_5a1f31b0_0778_4762_b2ed_143e0306d789 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_5a1f31b0_0778_4762_b2ed_143e0306d789">
+        <description>Le plat zambien appelé &quot;mopane&quot; est en fait un insecte comestible, plus précisément une chenille de papillon de nuit qui se nourrit des feuilles d&apos;un arbre appelé mopane. Les chenilles de mopane sont une source importante de protéines dans de nombreuses régions d&apos;Afrique australe, y compris la Zambie. Elles sont souvent consommées frites, séchées ou bouillies, et sont appréciées pour leur saveur et leur teneur élevée en protéines. Les chenilles de mopane sont considérées comme une délicatesse dans de nombreuses cultures africaines et font partie intégrante de la cuisine traditionnelle zambienne.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/mopane.jpeg</image>
+        <name>Mopane</name>
+        <rdfs:label xml:lang="fr">Mopane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_70832a2b_12ce_4210_bae4_867eb1c75e5b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_70832a2b_12ce_4210_bae4_867eb1c75e5b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>90 g de farine de maïs bio
+270 g d’eau
+sel
+3 oignons frais en botte avec le vert
+1 c à s d’huile d’olive
+1 fine rondelle de piment rouge
+150 g d’épinards en feuille (surgelées et décongelées)
+1 petite boîte de haricots rouges</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/pur%C3%A9-de-farine-de-ma%C3%AFs.jpg</image>
+        <name>Puré_de_farine_de_mais</name>
+        <rdfs:label xml:lang="fr">Puré_de_farine_de_maïs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_73620ba9_d7a8_40b8_b674_11c342eb7be2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_73620ba9_d7a8_40b8_b674_11c342eb7be2">
+        <description>Les &quot;mopane worms&quot; (chenilles de mopane) sont souvent consommés avec un plat traditionnel zanbien appelé &quot;sadza&quot;. Le sadza est une sorte de bouillie épaisse faite à partir de farine de maïs, et il est souvent servi avec des plats d&apos;accompagnement tels que des légumes, de la viande ou, dans ce cas, des chenilles de mopane. Cette combinaison est appréciée dans de nombreuses régions d&apos;Afrique australe pour sa valeur nutritionnelle et sa saveur traditionnelle.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Mopane%20worms-et-Sadza.jpeg</image>
+        <name>Mopane_worms_et_sadza</name>
+        <rdfs:label xml:lang="fr">Mopane_worms_et_sadza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_783eca4e_0a22_4233_8611_5dcf97083b64 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_783eca4e_0a22_4233_8611_5dcf97083b64">
+        <description>Le &quot;chikanda&quot;, également connu sous le nom de &quot;African polony&quot; ou &quot;African sausage&quot;, est un plat traditionnel zambien et malawite. Il est préparé à partir de racines de plantes sauvages, en particulier les racines de la plante Orchidaceae. Les racines sont séchées, puis moulues en une pâte fine. Cette pâte est mélangée avec des arachides grillées, de l&apos;huile, des oignons, du sel et parfois du piment pour former une sorte de pâte épaisse. Cette pâte est ensuite cuite à la vapeur pour créer un plat dense et savoureux.
+
+Le chikanda est apprécié pour sa texture unique et son goût distinctif. Il est souvent consommé en tant que plat d&apos;accompagnement ou en-cas dans de nombreuses régions d&apos;Afrique australe.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/chikanda-bresé.jpeg</image>
+        <name>Chikanda_bresé</name>
+        <rdfs:label xml:lang="fr">Chikanda_bresé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_838360aa_aa6d_4cbc_9aa9_bd968564a6cb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_838360aa_aa6d_4cbc_9aa9_bd968564a6cb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Le &quot;vinkubala&quot; est un plat traditionnel zambien à base de chenilles de mopane frites. Les chenilles de mopane, également connues sous le nom de mopane worms, sont une source importante de protéines dans de nombreuses régions d&apos;Afrique australe, y compris la Zambie. Une fois frites, les chenilles de mopane sont souvent consommées comme une délicatesse, offrant une texture croquante et une saveur distinctive.
+
+Le vinkubala est apprécié pour sa valeur nutritionnelle, en particulier pour sa teneur élevée en protéines. Il est souvent consommé comme plat d&apos;accompagnement ou en tant que collation. Bien que la consommation de chenilles puisse sembler inhabituelle dans certaines cultures, elles sont considérées comme un mets délicieux et nutritif dans de nombreuses régions d&apos;Afrique australe.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Vinkubala.jpeg</image>
+        <name>Vinkubala</name>
+        <rdfs:label xml:lang="fr">Vinkubala</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_83a9d218_5a0f_4d1d_a859_d8bdc0b328bd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_83a9d218_5a0f_4d1d_a859_d8bdc0b328bd">
+        <description>Protéines : Fournies par la viande de bœuf, les protéines sont essentielles pour la croissance, la réparation des tissus et d&apos;autres fonctions corporelles.
+
+Vitamines : Les légumes et la viande de bœuf peuvent fournir une variété de vitamines, telles que la vitamine C, la vitamine A, les vitamines du groupe B, etc., qui jouent un rôle crucial dans de nombreuses fonctions biologiques.
+
+Minéraux : Les légumes et la viande de bœuf peuvent contenir des minéraux importants tels que le fer, le zinc, le potassium, le magnésium, etc., qui sont essentiels pour la santé globale.
+
+Fibres : Les légumes peuvent fournir des fibres alimentaires, importantes pour la santé digestive et la régulation du taux de sucre dans le sang.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Masuku.jpeg</image>
+        <name>Masuku</name>
+        <rdfs:label xml:lang="fr">Masuku</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_8bb959c8_fec7_4c5d_b017_6b00387cc54d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_8bb959c8_fec7_4c5d_b017_6b00387cc54d">
+        <description>La Nshima aux haricots est un plat traditionnel zambien qui consiste en une bouillie épaisse de farine de maïs (Nshima) servie avec une sauce aux haricots. La Nshima est préparée en faisant bouillir de la farine de maïs avec de l&apos;eau jusqu&apos;à ce qu&apos;elle atteigne une consistance dense et épaisse. Les haricots sont cuits pour créer une sauce consistante qui est servie sur le côté ou versée sur la Nshima.
+
+Ce plat est apprécié pour sa valeur nutritionnelle, sa capacité à fournir une sensation de satiété et sa place centrale dans la cuisine traditionnelle zambienne. La combinaison de la Nshima et de la sauce aux haricots crée un repas équilibré et nourrissant, souvent apprécié en famille ou lors d&apos;occasions spéciales.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nshima-au-arrico.jpeg</image>
+        <name>Nshima_au_haricot</name>
+        <rdfs:label xml:lang="fr">Nshima_au_haricot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_8f051887_2c6d_40e3_b0fa_836d2ffb5853 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_8f051887_2c6d_40e3_b0fa_836d2ffb5853">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Le couscous de manioc au kapenta est un plat populaire en Afrique australe, en particulier en Zambie et au Zimbabwe. Ce plat combine le couscous de manioc, qui est une variante du couscous traditionnel fabriqué à partir de farine de manioc, avec du kapenta, qui est un type de petit poisson pêché dans les eaux douces d&apos;Afrique.
+
+Pour préparer ce plat, le couscous de manioc est cuit à la vapeur jusqu&apos;à ce qu&apos;il soit léger et moelleux. Pendant ce temps, le kapenta est généralement mariné avec des épices et parfois du citron pour ajouter de la saveur. Une fois le couscous de manioc cuit, il est mélangé avec le kapenta pour créer un plat savoureux et nutritif.
+
+Ce plat offre une combinaison de textures et de saveurs uniques, avec le couscous de manioc apportant une base légère et le kapenta ajoutant une saveur salée et délicate. Il est souvent apprécié en tant que plat principal dans de nombreuses régions d&apos;Afrique australe.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/couscous-manioc-au-Kapenta.jpeg</image>
+        <name>Couscous_manioc_au_kapenta</name>
+        <rdfs:label xml:lang="fr">Couscous_manioc_au_kapenta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_94a3eeea_d834_4a94_9c20_5a3406b1c1fa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_94a3eeea_d834_4a94_9c20_5a3406b1c1fa">
+        <description>Lumanda&quot; est un poisson d&apos;eau douce que l&apos;on trouve en Afrique, tandis que &quot;pounded&quot; signifie &quot;pilé&quot; en anglais.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Lumanda-in-pounded.jpeg</image>
+        <name>Lumanda_in_pounded</name>
+        <rdfs:label xml:lang="fr">Lumanda_in_pounded</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_94f776b0_476a_4fa3_ac8c_6447188c5024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_94f776b0_476a_4fa3_ac8c_6447188c5024">
+        <description>Voici les ingrédients de sa recette :
+450g de farine tout usage ,
+1 cuillère-à-café de sel,
+3 cuillères-à-soupe d’huile, 187g d’eau,
+un fond d’huile,
+de la farine pour fleurer.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/pain-plat.jpg</image>
+        <name>Pain_plat</name>
+        <rdfs:label xml:lang="fr">pain_plat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_97606836_4835_4a1f_8151_74cc330993de -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_97606836_4835_4a1f_8151_74cc330993de">
+        <description>La chenille de mopane est souvent appelée &quot;mopane worm&quot; en anglais. Il s&apos;agit de la larve d&apos;un papillon de nuit qui se nourrit des feuilles de l&apos;arbre mopane. Les chenilles de mopane sont une source importante de protéines dans de nombreuses régions d&apos;Afrique australe et sont consommées comme aliment traditionnel dans des plats tels que l&apos;inyama yenhloko en zoulou et l&apos;umkukhu en ndébélé. Elles sont souvent frites, séchées ou bouillies, et sont appréciées pour leur saveur et leur teneur élevée en protéines.
+
+En anglais, &quot;worms&quot; peut se traduire par &quot;chenilles&quot; dans le contexte des insectes comestibles comme la chenille de mopane. Ainsi, &quot;mopane worms&quot; se réfère spécifiquement aux chenilles de mopane qui sont consommées comme nourriture dans certaines cultures africaines.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Mopane-worms.jpeg</image>
+        <name>Mopane_worms</name>
+        <rdfs:label xml:lang="fr">Mopane_worms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_9f8f3da4_6557_40c9_ae19_52c9d2824fe5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_9f8f3da4_6557_40c9_ae19_52c9d2824fe5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Feuilles de manioc : Les feuilles de manioc sont généralement cuites avec des épices et parfois de la pâte d&apos;arachide pour créer une sauce riche et savoureuse.
+Calories : Environ 330 kcal
+Glucides : Environ 80-90 grammes
+Fibres : Environ 2-3 grammes
+Protéines : Environ 1-2 grammes
+Lipides : Environ 0-1 gramme</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/cassava-leaves-punded-soda.jpeg</image>
+        <name>cassava_leave</name>
+        <rdfs:label xml:lang="fr">Cassava_leave-punderd_soda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_b054b7b8_3f5d_4579_bf4b_54a60cfd43e2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_b054b7b8_3f5d_4579_bf4b_54a60cfd43e2">
+        <rdfs:label xml:lang="fr">Vianezambie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_b4150ec2_d39b_4a29_a95d_15c4579a978a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_b4150ec2_d39b_4a29_a95d_15c4579a978a">
+        <description>Le &quot;vinkubala&quot; est un plat traditionnel zambien à base de chenilles de mopane frites. Les chenilles de mopane, également connues sous le nom de mopane worms, sont une source importante de protéines dans de nombreuses régions d&apos;Afrique australe, y compris la Zambie. Une fois frites, les chenilles de mopane sont souvent consommées comme une délicatesse, offrant une texture croquante et une saveur distinctive.
+
+Le vinkubala est apprécié pour sa valeur nutritionnelle, en particulier pour sa teneur élevée en protéines. Il est souvent consommé comme plat d&apos;accompagnement ou en tant que collation. Bien que la consommation de chenilles puisse sembler inhabituelle dans certaines cultures, elles sont considérées comme un mets délicieux et nutritif dans de nombreuses régions d&apos;Afrique australe.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Vinkubala1.jpeg</image>
+        <name>Vinkubala</name>
+        <rdfs:label xml:lang="fr">Vinkubala1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_bb92fdaf_d66a_4f79_b0a3_74dffb1993a5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_bb92fdaf_d66a_4f79_b0a3_74dffb1993a5">
+        <description>Le &quot;vitumbuwa&quot; est une pâtisserie traditionnelle zambienne populaire, souvent préparée pour les occasions spéciales ou comme friandise sucrée. Il s&apos;agit de boules de beignets sucrés, généralement faites à partir de farine, de sucre, de levure, de sel et parfois de lait de coco. Les boules de pâte sont frites jusqu&apos;à ce qu&apos;elles soient dorées et croustillantes, puis saupoudrées de sucre pour ajouter une touche sucrée.
+
+Le vitumbuwa est apprécié pour sa simplicité, sa saveur sucrée et sa texture moelleuse à l&apos;intérieur et croustillante à l&apos;extérieur. Il est souvent servi comme collation ou en dessert, et il est aimé de nombreuses personnes en Zambie pour son goût délicieux et réconfortant.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Vitumbuwa.jpeg</image>
+        <name>Vitumbuwa</name>
+        <rdfs:label xml:lang="fr">Vitumbuwa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_bd1a15bc_1f64_498e_a1a5_58772ba40892 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_bd1a15bc_1f64_498e_a1a5_58772ba40892">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Voici les ingrédients de la recette :
+1 tomate
+20 gombos (ou okras)
+1/2 cuillère à café de bicarbonate de soude
+Sel au goût</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Sauce-gombos-et-tomates.jpg</image>
+        <name>Sauce_gombo_et_tomates</name>
+        <rdfs:label xml:lang="fr">Sauce_gombos_et_tomates</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_be227eb8_7344_4561_9634_7eb8a5b634e4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_be227eb8_7344_4561_9634_7eb8a5b634e4">
+        <description>1- 680 g de bœuf 
+      2- 2 oignons
+      3- 2 gousses d&apos;ail
+      4- 20 g de persil haché
+      5- 1 Œuf
+      6- 1 cuillère à café rase de poivre noir
+      7- 1 cuillère à café de cumin moulu
+      8- 1/2 cuillère à café de paprika
+      9- Sel au goût
+      10- 45 g d&apos;huile de coco</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Hiu%20Ph%C3%A1p.jpeg</image>
+        <name>Huiphap</name>
+        <rdfs:label xml:lang="fr">HuiPhap</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_d48d79ee_b4b3_43e4_8b7d_b1831df96957 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_d48d79ee_b4b3_43e4_8b7d_b1831df96957">
+        <description>1- 195 g de farine T 65
+      2- 65 g de farine de maïs
+    
+      3- 50 g sucre</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Lusaka.jpeg</image>
+        <name>Lusaka</name>
+        <rdfs:label xml:lang="fr">Lusaka</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_e3a92c1a_cf39_48a8_aec4_5666f873c5af -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_e3a92c1a_cf39_48a8_aec4_5666f873c5af">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>Voici les ingrédients de la recette :
+1 grand bocal de cornilles cuites (black eyed peas)
+500 g de gombos
+1 gros oignon
+2 belles tomates
+1 cuillère à soupe d&apos;huile neutre pour cuisson
+1 bouillon cube de légumes</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Rago%C3%BBt-de-cornilles-aux-gombos.jpg</image>
+        <name>Ragout_de_cornilles</name>
+        <rdfs:label xml:lang="fr">Ragoût_de_cornilles_aux_gombos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_eaf26ba6_1132_4112_8a6f_68ec7a8d68bc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_eaf26ba6_1132_4112_8a6f_68ec7a8d68bc">
+        <description>Le &quot;chibwabwa&quot; est le nom local donné aux feuilles de citrouille en Zambie. Ces feuilles sont largement consommées et appréciées dans la cuisine zambienne. Elles sont souvent préparées en sauce avec des épices et d&apos;autres ingrédients pour accompagner des plats tels que la bouillie de maïs (nshima) ou d&apos;autres plats traditionnels zambiens.
+
+Les feuilles de citrouille, ou chibwabwa, sont appréciées pour leur saveur et leur valeur nutritive. Elles sont une source de vitamines, de minéraux et de fibres, ce qui en fait un ingrédient important dans l&apos;alimentation zambienne.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Chibwabwa.jpeg</image>
+        <name>Chibwabwa</name>
+        <rdfs:label xml:lang="fr">Chibwabwa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_ec81d2d3_4c98_498b_8ec8_92f965b91e74 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_ec81d2d3_4c98_498b_8ec8_92f965b91e74">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>250 g d&apos;épinards frais
+100 g de cacahuètes non salées et décortiquées
+1 tomate
+1 oignon
+1 verre d&apos;eau
+sel
+poivre</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Ifisashi.jpg</image>
+        <name>Ifisashi</name>
+        <rdfs:label xml:lang="fr">Ifisashi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_ed194726_4a4c_49ba_9f5b_561d7779b455 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_ed194726_4a4c_49ba_9f5b_561d7779b455">
+        <description>Le fufu est une boule épaisse faite à partir de farine de maïs, de manioc ou d&apos;autres féculents, et il est souvent consommé comme accompagnement dans de nombreuses régions d&apos;Afrique.
+
+La sauce aux légumes peut contenir une variété d&apos;ingrédients tels que des légumes locaux, des épices et parfois de la viande ou du poisson. La composition exacte de la sauce peut varier en fonction des préférences régionales et individuelles.
+
+En raison de la diversité des recettes traditionnelles africaines, il peut y avoir plusieurs variations de la préparation de la sauce aux légumes et du fufu selon les régions et les cultures.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nsembe-basic.jpeg</image>
+        <name>Nsembe_basic</name>
+        <rdfs:label xml:lang="fr">Nsembe_basic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f0bdf488_2306_4bb1_9939_2faa3af730ed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f0bdf488_2306_4bb1_9939_2faa3af730ed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <rdfs:label xml:lang="fr">farine_de_mais</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f371e258_9a74_4c82_a359_e98abf868553 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f371e258_9a74_4c82_a359_e98abf868553">
+        <rdfs:label xml:lang="fr">Chikanda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f667b7b3_cc9c_4fa4_9953_3ddb33e523bf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f667b7b3_cc9c_4fa4_9953_3ddb33e523bf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Dish"/>
+        <description>La combinaison de chibwabwa (feuilles de citrouille) et de gombo (okra) dans la cuisine africaine crée un plat délicieux et nutritif. Les feuilles de citrouille sont riches en vitamines et minéraux, tandis que le gombo est une excellente source de fibres et de nutriments. Lorsqu&apos;ils sont préparés ensemble, les deux ingrédients offrent une combinaison de saveurs et de textures intéressantes.
+
+La préparation de ce plat peut varier, mais il est courant de cuire les feuilles de citrouille et le gombo avec des épices et d&apos;autres ingrédients pour créer une sauce riche et savoureuse. Ce plat est souvent servi avec un accompagnement tel que du riz, de la bouillie de maïs (nshima) ou du manioc pour un repas complet et équilibré.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Chibwabwa-au-gombo.jpeg</image>
+        <name>chibwabwa_au_gombo</name>
+        <rdfs:label xml:lang="fr">Chiwabwa_au_gombo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f6c1bf93_ec56_4fa6_9ba2_f73127d77d1e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f6c1bf93_ec56_4fa6_9ba2_f73127d77d1e">
+        <description>Le &quot;munkoyo&quot; est une boisson traditionnelle zambienne à base de maïs fermenté. Pour préparer le munkoyo, on fait fermenter de la farine de maïs avec de l&apos;eau et parfois du sucre, ce qui crée une boisson légèrement acidulée et pétillante. Des herbes ou des fruits peuvent également être ajoutés pour donner de la saveur à la boisson. Le munkoyo est souvent consommé comme rafraîchissement traditionnel en Zambie et dans d&apos;autres régions d&apos;Afrique australe.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Munkoyo.jpeg</image>
+        <name>Munkoyo</name>
+        <rdfs:label xml:lang="fr">Munkoyo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f7d241cd_60d1_4c81_b623_eafe16607eba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f7d241cd_60d1_4c81_b623_eafe16607eba">
+        <description>Feuilles de chibwawa :
+
+Énergie : environ 20 kcal
+Protéines : environ 3 g
+Glucides : environ 3 g
+Fibres : environ 2 g
+Vitamine A, C, et K : présentes en quantités significatives
+Calcium, fer, potassium : présents en quantités significatives
+
+Tomates :
+
+Énergie : environ 18 kcal
+Protéines : environ 1 g
+Glucides : environ 3-4 g
+Fibres : environ 1 g
+Vitamine A, C, et K : présentes en quantités significatives</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/chibwawa(1).jpeg</image>
+        <name>Chibwawa_tomates</name>
+        <rdfs:label xml:lang="fr">Chibwabwa_au_tomates</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f8c6fd61_989d_4589_a838_355abc9880d1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f8c6fd61_989d_4589_a838_355abc9880d1">
+        <description>Protéines : Les crevettes sont une excellente source de protéines. Elles fournissent environ 24 grammes de protéines pour une portion de 100 grammes.
+
+Vitamine C : Les tomates sont riches en vitamine C, offrant environ 14 mg pour une portion de 100 grammes. La vitamine C est essentielle pour le système immunitaire et la santé de la peau.
+
+Fibres : Les légumes sautés peuvent contenir des fibres, qui sont bénéfiques pour la santé digestive. Par exemple, les épinards sont riches en fibres, offrant environ 2,2 grammes de fibres pour une portion de 100 grammes.
+
+Acides gras oméga-3 : Les crevettes peuvent contenir des acides gras oméga-3, qui sont bénéfiques pour la santé cardiovasculaire. Les crevettes fournissent environ 0,29 gramme d&apos;acides gras oméga-3 pour une portion de 100 grammes.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nkumu-Andza.jpeg</image>
+        <name>Nkamu_andza</name>
+        <rdfs:label xml:lang="fr">Nkumu_andza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_fe0f3299_d4d4_468a_9835_3f367e161db2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_fe0f3299_d4d4_468a_9835_3f367e161db2">
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#OWLNamedIndividual_f0bdf488_2306_4bb1_9939_2faa3af730ed"/>
+        <description>Le &quot;nshima&quot; est un plat traditionnel zambien et une forme de bouillie épaisse qui est un aliment de base en Zambie et dans d&apos;autres pays d&apos;Afrique australe. Il est préparé en faisant bouillir de la farine de maïs avec de l&apos;eau jusqu&apos;à obtention d&apos;une consistance dense et épaisse. Le nshima est souvent consommé avec une sauce ou un accompagnement, tels que des légumes, de la viande, du poisson ou des haricots.
+
+Ce plat est souvent consommé avec les mains, en formant de petites boules de nshima et en les trempant dans la sauce ou l&apos;accompagnement. Le nshima est apprécié pour sa capacité à fournir une sensation de satiété et à accompagner une grande variété de plats traditionnels zambiens.</description>
+        <image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Zambia/Nshima.jpeg</image>
+        <name>Nshima</name>
+        <rdfs:label xml:lang="fr">Nshima</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Olive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Olive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC"/>
+        <name>Olives</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Pilons_de_poulet_rôtis_somaliens -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Pilons_de_poulet_rôtis_somaliens">
+        <description>1- 12 pilons de poulet
+      2- 1 kg de petites pommes de terre nouvelles
+      3- 2 c. à café de romarin séché
+      4- 2 c. à café de tandoori
+      5- 5 gousses d’ail
+      6- 1/2 cube de bouillon de volaille
+      7- 1 c. à soupe de vinaigre blanc
+      8- 5 c. à soupe d’huile d’olive
+      9-Sel</description>
+        <image>../../assets/Somalie-Natly.jpg</image>
+        <name>Pilons de poulet rôtis somaliens</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Piment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Piment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineA"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineB"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC"/>
+        <name>Piment</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Poivre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Poivre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineA"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineB"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC"/>
+        <name>Poivre</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Pommes_de_terre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Pommes_de_terre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Fibres"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Glucides"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC"/>
+        <name>Pommes de terre</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Poulet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Poulet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineB"/>
+        <name>Poulet</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Protides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Protides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Protides</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Protéines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Protéines">
+        <name>Protéines</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Sel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Sel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <name>Sel</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Shaah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Shaah">
+        <description>1 c. à c. de feuilles de thé
+3 gousses de cardamome
+1 clou de girofle
+2 cm de gingembre frais
+1 bâton de cannelle
+1 c. à s. d&apos;érythritol roux
+3 c. à s. de crème fraîche liquide
+50 cl d&apos;eau</description>
+        <image>../../assets/The-aux-epices-somalien.jpg</image>
+        <name>Shaah</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>Vitamines</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <name>VitamineB</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#FoodComponent"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineC"/>
+        <name>Vitamine C</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#ail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#ail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <name>ail</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#romarin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#romarin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Minéraux"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#VitamineB"/>
+        <name>romarin</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#tandoori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#tandoori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Cannelle"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Curcuma"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Fenugrec"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Piment"/>
+        <hasFoodIngredient rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Poivre"/>
+        <name>tandoorin</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#vinaigre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#vinaigre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Ingredient"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Fibres"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Glucides"/>
+        <hasFoodComponent rdf:resource="http://www.semanticweb.org/kemthopaul/ontologies/2024/3/foodData#Protéines"/>
+        <name>Vinaigre</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
