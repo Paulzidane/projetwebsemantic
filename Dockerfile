@@ -51,6 +51,7 @@ RUN tar -zxvf *.tar.gz --directory /opt/nodejs --strip-components=1
 RUN rm *.tar.gz
 RUN ln -s /opt/nodejs/bin/node /usr/local/bin/node
 RUN ln -s /opt/nodejs/bin/npm /usr/local/bin/npm
+RUN apk add serve
 
 # RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 #     && apk add nodejs
