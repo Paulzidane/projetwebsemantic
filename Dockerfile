@@ -56,7 +56,7 @@ RUN ln -s /opt/nodejs/bin/npm /usr/local/bin/npm
 #     && apk add nodejs
 RUN apk add --no-cache nodejs npm
 RUN npm install -g npm@9.6.6
-RUN npm install -g serve
+RUN npm install --global http-server
 RUN node -v
 
     # Copy startup script
