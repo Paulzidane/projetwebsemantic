@@ -4,6 +4,8 @@ import FoodList from './component/FoodList';
 import SparqlQuery from './component/SparqlQuery';
 import FoodSearch from './component/FoodSearch';
 import Header from './component/Header';
+import AddFood from './component/AddFood';
+
 
 function App() {
   return (
@@ -14,12 +16,17 @@ function App() {
         <main>
           <Routes>
             <Route path="/foodsearch" element={<FoodSearch />} />
-          
-            <Route path="/sparqlquery" element={<SparqlQuery />} />
+            <Route path="/sparqlquery" element={<SparqlQuery />} /> 
+            <Route path="/addfood" element={<AddFood />} />  
           </Routes>
         </main>
-        <FoodList />
-       < SparqlQuery />
+       
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ width: '80%' }}>
+            <FoodList />
+            <SparqlQuery />
+          </div>
+        </div>
       </div>
     </Router>
   );
