@@ -9,6 +9,7 @@ COPY package*.json ./
 RUN npm ci
 RUN npm install -g npm@latest
 RUN npm i sharp
+RUN npm install -g serve
 
 # Copy the rest of the application code
 COPY . .
